@@ -36,9 +36,8 @@ const Gallery = (props) => {
             
             {props.img.length > 1 && <>
             <div className='slideshow_controls'>
-                <i class="fas fa-angle-left slideshow_controls_chevron" onClick={onPrev}></i>
-                <i class="fas fa-angle-right slideshow_controls_chevron" onClick={onNext}></i>
-                
+                <i className="fas fa-angle-left slideshow_controls_chevron" onClick={onPrev}></i>
+                <i className="fas fa-angle-right slideshow_controls_chevron" onClick={onNext}></i>
             </div>
             <div className='slideshow_idx'>{slideIdx + 1} / {props.img.length}</div>
             </>}

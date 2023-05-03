@@ -24,6 +24,7 @@
   }
   .housing_page_header_hoster_ratings {
     padding: 0 0.2rem 1rem 0 !important; 
+    
   }
   .housing_page_header_hoster_ratings_star {
     padding: 0 0.2rem 3rem 0; 
@@ -37,6 +38,10 @@
     width: 100% !important;
     margin-bottom: 0 !important; 
   } 
+  .fa-star:before {
+    content: "\f005";
+    font-size: 12px !important;
+  }
 }
 
 .housing_page {

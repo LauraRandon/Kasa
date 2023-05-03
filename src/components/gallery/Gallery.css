@@ -22,6 +22,7 @@
 .slideshow_container {
   display: flex;
   transition: transform .5s ease; 
+  width: 100%;
 }
 
 .slideshow_container_img {
@@ -47,9 +48,10 @@
 .slideshow_controls_chevron {
   width: 50px !important;
   height: auto !important;
-  font-size: 25px;
+  font-size: 60px;
   opacity: 0.5;
   cursor: pointer; 
+  color: white;
 }
 
 .slideshow_controls_chevron:hover {
