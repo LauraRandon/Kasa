@@ -344,9 +344,10 @@ a {
 .slideshow_controls_chevron {
   width: 50px !important;
   height: auto !important;
-  font-size: 25px;
+  font-size: 60px;
   opacity: .5;
-  cursor: pointer
+  cursor: pointer;
+  color: white;
 }
 
 .slideshow_controls_chevron:hover {
@@ -387,13 +388,18 @@ a {
   }
   .housing_page_header_hoster_infos_name {
       margin-top: 0 !important;
-      margin-bottom: 0 !important
+      margin-bottom: 0 !important;
+      width: 53px !important;
   }
   .housing_page_header_hoster_ratings {
       padding: 0 .2rem 1rem 0 !important
   }
   .housing_page_header_hoster_ratings_star {
-      padding: 0 .2rem 3rem 0 !important
+      padding: 0 .2rem 3rem 0 !important;
+      font-size: 12px;
+  }
+  .fa-star:before {
+    font-size: 90%;
   }
   .housing_page_collapses {
       flex-direction: column;
