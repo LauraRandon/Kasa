@@ -1,19 +1,18 @@
 import React from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import housings from '../../assets/data/logements';
 import Collapse from '../../components/collapse/collapse';
 import Gallery from '../../components/gallery/gallery';
 import RatingScale from './RatingScale';
+import NoMatchContent from '../NoMatch/NoMatchContent';
 
 const HousingPage = () => {
 
     const { id } = useParams()
     const housing = housings.find(housing => housing.id === id)
     if (housing === undefined) { 
-        return <section className="error_page">
-            <p className="error_page_subtitle">Malheureusement, le logement que vous recherchez n'est plus disponible ou n'existe pas.</p>
-            <NavLink title='Accueil' end to='/home' className="error_page_link">Retourner sur la page d'accueil</NavLink> 
-        </section>
+        return (
+        <NoMatchContent />)
     }
 
     return (
